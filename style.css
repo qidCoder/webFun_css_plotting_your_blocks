@@ -1,35 +1,57 @@
+/*Created by Shelley Ophir
+Coding Dojo Web Fundamentals Sep. 15,2020
+Try to duplicate the image given by adjusting the CSS code provided. 
+Use margins and paddings to adjust the spaces between divisions and 
+use the display property (NOT flex) to be able to put each block in its proper place.Only use CSS (no HTML)
+
+please use min-height as well as vertical align to give minimum height 
+to the division and also to vertically align some of the inline-blocks.*/
+
+
 /*CSS reset settings here*/
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
    }
    #wrapper{
-    width: 950px;
+    width: 1001px;/*adjust to have everything fit on one line*/
     background-color: silver;
     margin: 0px auto;
+    padding: 21px;/*adds space around all main boxes to the gray box*/
    }
    #header{
     min-height: 150px;
     background-color: green;
+    margin: 0 0 23px 0;/*adds space beneath green box*/
    }
    #navigation{
     min-height: 300px;
     width: 200px;
     background-color: blue;
+    display: inline-block;/*to allow side-by-side with the main_content*/
+    vertical-align: top;/*aligns red and blue box from the top*/
+    margin: 0 23px 0 0;/*adds space between blue and red box*/
    }
    #main_content{
     min-height: 400px;
-    width: 700px;
+    width: 731px;/*increased to create larger red box right margin*/
     background-color: red;
+    display: inline-block;/*to allow side-by-side with the navigation*/
+    vertical-align: top; /*aligns red and blue box from the top*/
+    padding: 16px;/*moves the yellow boxes down reative to the red box*/
    }
    .subcontents{
     min-height: 200px;
     width: 210px;
     background-color: yellow;
+    display: inline-block;/*to allow all 3 yellow boxes to be side-by-side*/
+    margin: 0px 5px;/*creates spacing between yellow boxes*/
    }
    #advertisement{
     min-height: 120px;
     width: 660px;
     background-color: purple;
+    margin: 21px 5px;/*adds space between yellow boxes and top of purple box*/
    }
    
